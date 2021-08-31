@@ -3,7 +3,7 @@
 	"context": "..",
 	"dockerFile": "Dockerfile",
 	"settings": {
-		"terminal.integrated.shell.linux": "/bin/sh",
+		"terminal.integrated.defaultProfile.linux": "ash",
 		"python.pythonPath": "/usr/local/bin/python",
 		"python.linting.enabled": true,
 		"python.linting.pylintEnabled": true,
@@ -13,7 +13,8 @@
 		"python.testing.pytestPath": "/usr/local/bin/pytest"
 	},
 	"extensions": [
-		"ms-python.python"
+		"ms-python.python",
+		"ms-python.vscode-pylance"
 	],
 	"postCreateCommand": "pip install -r requirements.txt"
 }
